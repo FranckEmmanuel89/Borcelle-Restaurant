@@ -1,0 +1,593 @@
+
+@media (min-width: 767.1px) and (max-width:1023px) {
+
+    /*------------------ INDEX/HOME ------------------*/
+    .amazing-and-delicious {
+        display: block;
+    }
+
+    /*------------------ NAV BAR ------------------*/
+    .menu-hamburger-contain {
+        display: none;
+    }
+    nav {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .nav-bar-menu {
+        display: flex;
+        text-decoration: none;
+        gap: 40px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 21px;
+    }
+    .link-home:hover, .link-menu:hover, .link-about:hover, .linK-contact:hover {
+        color: rgb(228, 197, 144);
+    } 
+    .link-home::after, .link-menu::after, .link-about::after, .linK-contact::after {
+        content: "";
+        bottom: -4px;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background: rgb(228, 197, 144);
+        transform: scale(0);
+        transition: transform 0.35s ease-in-out;
+    }
+    .link-home:hover::after, .link-menu:hover::after, .link-about:hover::after, .linK-contact:hover::after {
+        transform: scale(1);
+    }
+
+    /*------------------ MAIN INDEX ------------------*/
+    .section2 {
+        flex-direction: row;
+        height: 650px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 30px;
+    }
+    .section2-left,
+    .section2-center,
+    .section2-right {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 500px;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .section3 {
+        height: 600px;
+    }
+    .what-do-they-say-about-us {
+        font-size: 25px;
+    }
+    .customers-reviews {
+        font-size: 28px;
+    }
+    .section4-content2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 100px;
+    }
+    .section4 {
+        height: 800px;
+        padding: 0px;
+    }
+
+    /*------------------ FOOTER INDEX ------------------*/
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+        height: 300px;
+    }
+    .copyright-contain {
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        height: 100px;
+        justify-content: center;
+    }
+    .follow-us-contain {
+        height: 100px;
+        justify-content: center;
+    }
+    .find-us-contain {
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        justify-content: center
+    }
+
+    /*------------------ MAIN MENU ------------------*/
+    .menu-signature-section-contain,
+    .menu-cocktail-section-contain,
+    .menu-dessert-section-contain {
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        justify-content: center;
+        width: 900px;
+    }
+    .menu-signature-section-tittle {
+        padding-top: 50px;
+    }
+
+     /*------------------ MAIN ABOUT ------------------*/
+    .section1-about,
+    .section3-about {
+        height: 1700px;
+        flex-direction: column;
+    }
+    .section1-about-left-contain,
+    .section3-about-right-contain {
+        width: 700px;
+        height: 600px;
+    }
+    .section1-about-right-contain,
+    .section3-about-left-contain {
+        width: 400px;
+        height: 700px;
+        margin-top: 30px;
+    }
+    .setion1-about-shape-image,
+    .setion3-about-shape-image {
+        width: 80px;
+        margin-left: 0px;
+        margin-left: 0px;
+    }
+    .setion3-about-shape-image {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .our-chef,
+    .our-story {
+        font-size: 30px;
+        margin-bottom: 0px;
+        font-weight: 400;
+        margin-top: 30px;
+    }   
+    .every-flavor{
+        font-weight: 100;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }    
+    .section1-about-left-contain-lorem,
+    .section3-about-right-contain-lorem {
+        font-family:"Neucha", cursive;
+        font-size: 25px;
+        margin: 40px 40px;
+    }    
+    .chef-name {
+        color: rgb(228, 197, 144);
+        font-size: 20px;
+    }
+    .section2-location-contain {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+        margin: 50px 100px;  
+    }
+    .image-location:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .image-location2:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .image-location3:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .image-location4:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .section3-about-left-contain {
+        margin-top: 100px;   
+    }  
+    .section2-image-location2-contain,
+    .section2-image-location4-contain {
+        margin-top: 0px;
+    }
+    .section2-about-lorem {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .section1-about-left-contain,
+    .section3-about-right-contain {
+        width: 600px;
+        height: 600px;
+    }
+    .section1-about-right-contain,
+    .section3-about-left-contain {
+        width: 700px;
+        height: 700px;
+        border: solid;
+        object-fit: cover;
+        object-position: center;
+    }
+    .section3-about-left-contain {
+        margin-bottom: 50px;
+    }
+    .chef-image-section1-about,
+    .staf-image-section1-about {
+        width: 700px;
+        height: 700px;
+        object-position: center;
+        object-fit: cover;
+    }
+    .section2-about {
+        height: 1000px;
+    }
+
+     /*------------------ MAIN CONTACT ------------------*/
+    .imput-name,
+    .imput-email,
+    .imput-subject {
+        width: 450px;
+    }
+    .text-area {
+        width: 450px;
+    }
+    .send-messaage-button {
+        width: 150px;
+    }
+    iframe {
+        height: 400px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1023.1px) {
+
+    /*------------------ INDEX/HOME ------------------*/
+    .amazing-and-delicious {
+        display: block;
+    }
+
+    /*------------------ NAV INDEX/HOME ------------------*/
+    .menu-hamburger-contain {
+        display: none;
+    }
+    nav {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .nav-bar-menu {
+        display: flex;
+        text-decoration: none;
+        gap: 50px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 15px;
+    }
+    .link-home:hover, .link-menu:hover, .link-about:hover, .linK-contact:hover {
+        color: rgb(228, 197, 144);
+    } 
+    .link-home::after, .link-menu::after, .link-about::after, .linK-contact::after {
+        content: "";
+        bottom: -4px;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background: rgb(228, 197, 144);
+        transform: scale(0);
+        transition: transform 0.35s ease-in-out;
+    }
+    .link-home:hover::after, .link-menu:hover::after, .link-about:hover::after, .linK-contact:hover::after {
+        transform: scale(1);
+    }
+    .Borcelle-restaurant {
+        font-size: 60px;
+    }
+    .section1 {
+        height: 300px;
+    }
+    .we-offer-top-notch {
+        font-size: 40px; 
+    }
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+        height: 650px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 150px;
+    }
+    .section2-center {
+        margin-top: 150px;
+    }
+    .section3 {
+        height: 800px;
+    }
+    .what-do-they-say-about-us {
+        font-weight: 200;
+        font-size: 40px;  
+    }
+    .customers-reviews {
+        font-size: 45px;
+        margin-bottom: 30pX;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .section4 {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    .why-choose-us {
+        font-size: 20px;
+        padding-top: 70px;
+    }
+    .our-Strength {
+        font-size: 25px;
+    }
+    .section4-content2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 600px;
+        padding: 50px 190px 0px 190px;
+    }
+
+    /*------------------ FOOTER ------------------*/
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+        height: 300px;
+        gap: 100px;
+    }
+    .copyright-contain {
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        height: 100px;
+        justify-content: center;
+    }
+    .follow-us-contain {
+        height: 100px;
+        justify-content: center;
+    }
+    .find-us-contain {
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        justify-content: center
+    }
+
+    /*------------------ MAIN MENU ------------------*/
+    .puntini {
+        display: inline;
+    }
+    .menu-signature-section,
+    .menu-cocktail-section,
+    .menu-dessert-section {
+        padding-bottom: 30px;
+    }
+    .menu-signature-section-tittle,
+    .menu-cocktail-section-tittle,
+    .menu-dessert-section-tittle {
+        font-size: 20px;
+    }
+    .miniuature-menu {
+        width: 100px;
+        height: 100px;
+    }
+    .signature {
+        margin-top: 20px;
+    }
+    .signature,
+    .cocktail {
+        margin-bottom: 5px;
+    }
+    .menu-signature-section-contain,
+    .menu-cocktail-section-contain,
+    .menu-dessert-section-contain {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        height: 400px;
+    }
+    .menu-left-signature,
+    .menu-left-cocktail,
+    .menu-left-dessert,
+    .menu-right-signature,
+    .menu-right-cocktail,
+    .menu-right-dessert {
+        width: 600px;
+        height: 400px;
+    }
+    .menu-left-signature,
+    .menu-left-cocktail,
+    .menu-left-dessert {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 400px;
+    }
+    .menu-contain {
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 100px;
+        border-right: solid;
+        border: none;
+    }
+    .menu-right-signature .menu-contain,
+    .menu-right-dessert .menu-contain,
+    .menu-right-cocktail .menu-contain {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        border: none;
+    }
+    .menu-right-signature .menu-contain,
+    .menu-right-dessert .menu-contain,
+    .menu-right-cocktail .menu-contain {
+        padding-left: 580px;
+        border: none;
+    } 
+    .menu-ingredients {
+        width: 350px;
+    }
+    .menu-name {
+        font-family:"Fira Code", monospace;
+        display: inline;
+    }
+    .menu-price {
+        display: inline;
+    }
+    .menu-signature-section-tittle {
+        padding-top: 20px;
+    }
+    .menu-dessert-section-contain {
+        margin-bottom: 50px;
+    }
+
+    /*------------------ MAIN ABOUT ------------------*/
+    .section1-about,
+    .section3-about {
+        height: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1-about-left-contain,
+    .section3-about-right-contain {
+        width: 600px;
+        height: 700px;
+    }
+    .our-chef,
+    .our-story {
+        color: white;
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    .section1-about-left-contain-lorem,
+    .section3-about-right-contain-lorem {
+        font-size: 30px;
+    }
+    .section1-about-right-contain {
+        width: 600px;
+        height: 700px;
+        margin-top: 100px;
+        border: 1px solid rgb(31, 30, 26);;
+        object-fit: cover;
+        object-position: center;
+    }
+    .chef-image-section1-about,
+    .staf-image-section1-about {
+        width: 600px;
+        height: 700px;
+    }
+    .setion1-about-shape-image {
+        width: 130px;
+        margin-left: 20px;
+    }
+    .setion3-about-shape-image {
+        width: 130px;
+        margin-right: 20px;
+    }
+    .section2-about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 620px;
+    }
+    .section2-location-contain {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px 80px;  
+    }
+    .image-location:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .image-location2:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .image-location3:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .image-location4:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 15);   
+    }
+    .section3-about-left-contain {
+        margin-top: 100px;   
+    }   
+
+    /*------------------ MAIN CONTACT ------------------*/
+    .section1-contact {
+        height: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 150px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .contact-gauche-contain {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+    .lets-get-in-touch {
+        font-size: 20px;
+    }
+    .imput-name,
+    .imput-email,
+    .imput-subject {
+        width: 500px;
+    }    
+    .text-area {
+        width: 500px;
+    }    
+    .send-messaage-button {
+        width: 150px;
+    }   
+    .send-messaage-button:hover {
+        background-color: black;
+        color: rgb(228, 197, 144);
+    }   
+    .contact-droite-contain {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 0px;
+    }    
+    .contact {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }    
+    .iframe-contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 200px;
+        margin-right: 200px;
+        height: 600px;
+    }
+    iframe {
+        height: 400px;
+    }   
+}
