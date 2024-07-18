@@ -1,524 +1,530 @@
 /*----------------------- RESET CSS -----------------------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*----------------------- UTILITIES -------------------- */
 a {
-    text-decoration: none;
-    color: white;  
+  text-decoration: none;
+  color: white;
 }
 
 /*------------------- INDEX/HOME PAGE -------------------*/
 /*--------------------- HEADER NAV ---------------------*/
 nav {
-    background-color: black;
-    display: flex;
-    height: 70px;
-    padding: 0px 10px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+  background-color: black;
+  display: flex;
+  height: 70px;
+  padding: 0px 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .image-logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    object-position: center;
-    object-fit: cover;
-    vertical-align: middle;
-    cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  object-position: center;
+  object-fit: cover;
+  vertical-align: middle;
+  cursor: pointer;
 }
 .image-logo:hover {
-    opacity: 0.5;
-}  
+  opacity: 0.5;
+}
 .menu-hamburger-contain {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 .image-menu-hamburger {
-    width: 30px;
+  width: 30px;
 }
 .nav-bar-menu {
-    display: none;
+  display: none;
 }
 
 /*------------------ HERO SECTION INDEX HOME ---------------------*/
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    height:100vh;
-    background-position: center;
-    background-size: cover;
-    background-image: url(Images/header-1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    animation-name: animation-hero;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    transition: 0.15s; 
-    justify-content: center; 
-    text-align: center;  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(Images/header-1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation-name: animation-hero;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition: 0.15s;
+  justify-content: center;
+  text-align: center;
 }
 @keyframes animation-hero {
-    0%
-    {
-        background-image: url(Images/header-1.jpg);
-    }
-    50%
-    {
-        background-image: url(Images/header-2.jpg);
-    }
+  0% {
+    background-image: url(Images/header-1.jpg);
+  }
+  50% {
+    background-image: url(Images/header-2.jpg);
+  }
 }
 .amazing-and-delicious {
-    color: rgb(228, 197, 144);
-    font-size: 18px;
-    font-family: "Playfair Display SC", serif;
-    text-decoration: underline;
-    display: none;
+  color: rgb(228, 197, 144);
+  font-size: 18px;
+  font-family: "Playfair Display SC", serif;
+  text-decoration: underline;
+  display: none;
 }
 .image-separator {
-    width: 80px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+  width: 80px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 .Borcelle-restaurant {
-    color: white;
-    font-size: 55px;
-    margin-bottom: 30px;
-    font-family: "Playfair Display SC", serif;
-    font-weight: 400;
-    padding: 0px 20px;
+  color: white;
+  font-size: 55px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  padding: 0px 20px;
 }
 .come-with-your-family {
-    color: white;
-    font-family: "Neucha", cursive;
-    font-size: 25px;
-    margin: 0px 40px 20px 40px;
+  color: white;
+  font-family: "Neucha", cursive;
+  font-size: 25px;
+  margin: 0px 40px 20px 40px;
 }
 .opening-hours {
-    color: rgb(192, 180, 168);
-    font-family: "Neucha", cursive;
-    font-size: 18px;
-    margin-bottom: 50px;
+  color: rgb(192, 180, 168);
+  font-family: "Neucha", cursive;
+  font-size: 18px;
+  margin-bottom: 50px;
 }
 .button-find-a-table {
-    width: 170px;
-    height: 50px;
-    font-family: "Playfair Display SC", serif;
-    background-color: rgb(228, 197, 144);
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 500ms linear;
+  width: 170px;
+  height: 50px;
+  font-family: "Playfair Display SC", serif;
+  background-color: rgb(228, 197, 144);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 500ms linear;
 }
 .button-find-a-table:hover {
-    background-color: black;
-    color: white;
-    border-color: rgb(228, 197, 144);
+  background-color: black;
+  color: white;
+  border-color: rgb(228, 197, 144);
 }
 .button-find-a-table:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 /*------------------- MAIN SECTION1 INDEX/HOME -------------------*/
 .section1 {
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    height: 350px;
-    border: solid;
-    border-top-color: rgb(57, 53, 3);
-    overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  height: 350px;
+  border: solid;
+  border-top-color: rgb(57, 53, 3);
+  overflow: hidden;
 }
 .image-decoratiion-section1 {
-    width: 25px;
-    height: 50px;
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 30px;
+  width: 25px;
+  height: 50px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 30px;
 }
 .favor-for-royalty {
-    color: rgb(228, 197, 144);
-    padding-top: 40px;
+  color: rgb(228, 197, 144);
+  padding-top: 40px;
 }
 .we-offer-top-notch {
-    color: white;
-    font-family: "Playfair Display SC", serif;
-    font-size: 30px;
-    font-weight: 100;
-    margin: 0px 40px;  
+  color: white;
+  font-family: "Playfair Display SC", serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0px 40px;
 }
 .section1-lorem {
-    color: white;
-    margin: 40px 40px 0px 40px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: "Neucha", cursive;
-    font-size: 17px;
-    line-height: 35px;
-    height: 200px;
+  color: white;
+  margin: 40px 40px 0px 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Neucha", cursive;
+  font-size: 17px;
+  line-height: 35px;
+  height: 200px;
 }
 /*----------------- MAIN SECTION2 INDEX/HOME -----------------*/
 .section2 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: black;
-    padding: 0px 150px;
-    max-height: 1500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  padding: 0px 150px;
+  max-height: 1500px;
 }
 .section2-left,
 .section2-center,
 .section2-right {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 1000px;
-    overflow: hidden;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 1000px;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .image-section2-left,
 .image-section2-center,
 .image-section2-right {
-    display: block;
-    transition: transform 0.8s ease-out;
-    cursor: pointer;
-    border-radius: 30px;
+  display: block;
+  transition: transform 0.8s ease-out;
+  cursor: pointer;
+  border-radius: 30px;
 }
 .dessert,
 .appetizers,
 .drinks {
-    color: white;
-    margin-top: 40px;
-    font-size: 25px;
-    font-family: "Neucha", cursive;
-    font-weight: 300;
-    margin-bottom: 15px;
+  color: white;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: "Neucha", cursive;
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 .section2-view-menu-dessert-link,
 .section2-view-menu-appetizers-link,
 .section2-view-menu-drinks-link {
-    text-decoration: none;
-    font-family: "Playfair Display SC", serif;
-    color: rgb(228, 197, 144);
-    font-size: 15px;
-    font-weight: bold;
+  text-decoration: none;
+  font-family: "Playfair Display SC", serif;
+  color: rgb(228, 197, 144);
+  font-size: 15px;
+  font-weight: bold;
 }
-.image-section2-left:hover, .image-section2-center:hover, .image-section2-right:hover {
-    transform: scale(1.1);
-    opacity: 0.6;
+.image-section2-left:hover,
+.image-section2-center:hover,
+.image-section2-right:hover {
+  transform: scale(1.1);
+  opacity: 0.6;
 }
-.section2-view-menu-dessert-link:hover, .section2-view-menu-appetizers-link:hover, .section2-view-menu-drinks-link:hover {
-    opacity: 0.7;
+.section2-view-menu-dessert-link:hover,
+.section2-view-menu-appetizers-link:hover,
+.section2-view-menu-drinks-link:hover {
+  opacity: 0.7;
 }
 /*------------------- MAIN SECTION3 INDEX/HOME -------------------*/
 .section3 {
-    background-image: url(images/testimonial-bg.jpg);
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
+  background-image: url(images/testimonial-bg.webp);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
 }
 .what-do-they-say-about-us {
-    color: rgb(228, 197, 144);
-    font-family: "Fira Code", monospace;
-    font-weight: 200;
-    font-size: 18px;
-    margin-bottom: 20px;
-    padding: 0px 20px;
+  color: rgb(228, 197, 144);
+  font-family: "Fira Code", monospace;
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
 }
 .customers-reviews {
-    color: white;
-    font-size: 20px;
-    font-family: "Neucha", cursive;
-    margin-bottom: 10PX;
-    padding: 18px 18px;
+  color: white;
+  font-size: 20px;
+  font-family: "Neucha", cursive;
+  margin-bottom: 10px;
+  padding: 18px 18px;
 }
 .testi-avatar {
-    border-radius: 50pX;
-    width: 70px;
-    height: 70px;
-    object-position: center;
-    object-fit: cover;
-    margin-top: 5px;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  object-position: center;
+  object-fit: cover;
+  margin-top: 5px;
 }
 .testi-name {
-    color: rgb(236, 230, 220);
-    font-family: "Fira Code", monospace;
-    font-weight: 200;
-    margin-top: 10px;
+  color: rgb(236, 230, 220);
+  font-family: "Fira Code", monospace;
+  font-weight: 200;
+  margin-top: 10px;
 }
 
 /*------------------- MAIN SECTION4 INDEX/HOME ----------------*/
 .section4 {
-    height: 1400px;
-    background-image: url(Images/background-pasta.png);
-    object-fit: cover;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    object-position: center;
-    border: solid;
-    border-top-color: rgb(57, 53, 3);
-    display: flex;
-    flex-direction: column;
+  height: 1400px;
+  background-image: url(Images/background-pasta.png);
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  object-position: center;
+  border: solid;
+  border-top-color: rgb(57, 53, 3);
+  display: flex;
+  flex-direction: column;
 }
 .section4-content1 {
-    height: 400px;
-    text-align: center;
-    justify-content: center;
+  height: 400px;
+  text-align: center;
+  justify-content: center;
 }
 .why-choose-us {
-    color: rgb(228, 197, 144);
-    font-family: "Playfair Display SC", serif;
-    font-weight: 100;
-    font-size: 15px;
-    padding-top: 40px;
+  color: rgb(228, 197, 144);
+  font-family: "Playfair Display SC", serif;
+  font-weight: 100;
+  font-size: 15px;
+  padding-top: 40px;
 }
 .our-Strength {
-    color: white;
-    font-size: 25px;
-    margin-bottom: 30px;
-    font-family: "Playfair Display SC", serif;
-    font-weight: 100;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 100;
 }
 .hygienic-food-container,
 .fresh-environment-container,
 .skilled-chef-container,
 .event-container {
-    width: 250px;
-    height: 250px;
-    background-color: black;
-    border: 1px solid bisque;
-    color: white;
-    margin-bottom: 50px;
-    border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  border: 1px solid bisque;
+  color: white;
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 .fresh-environment-container,
 .event-container {
-    background-color: rgb(21, 21, 21);
+  background-color: rgb(21, 21, 21);
 }
 .hygienic-food-image,
 .fresh-environment-image,
 .skilled-chef-image,
 .event-image {
-    margin: 20px 0px 10px 0px;
-    transition: transform 1s ease-in-out;
-    cursor: pointer;
+  margin: 20px 0px 10px 0px;
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
 }
-.hygienic-food-image:hover, .fresh-environment-image:hover, .skilled-chef-image:hover, .event-image:hover {
-    transform: rotate(360deg);
-    opacity: 0.6;
+.hygienic-food-image:hover,
+.fresh-environment-image:hover,
+.skilled-chef-image:hover,
+.event-image:hover {
+  transform: rotate(360deg);
+  opacity: 0.6;
 }
 .hygienic-food-tittle,
 .fresh-environment-tittle,
 .skilled-chef-tittle,
 .event-tittle {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-family:"Fira Code", monospace;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Fira Code", monospace;
 }
 .lorem {
-    font-family: "Neucha", cursive;
-    padding: 0px 20px;
+  font-family: "Neucha", cursive;
+  padding: 0px 20px;
 }
 
 /*---------------------- FOOTER ALL PAGES ---------------------*/
 
 footer {
-    background-image: url(Images/footer.jpg);
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    border-top: 1px solid rgb(30, 29, 14);;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 100px;
-    justify-content: space-between;
-    font-family: "Fira Code", monospace;
+  background-image: url(Images/footer.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  border-top: 1px solid rgb(30, 29, 14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 100px;
+  justify-content: space-between;
+  font-family: "Fira Code", monospace;
 }
 .copyright-contain {
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;;
-    height: 200px;
-    color: rgb(201, 197, 197);
-} 
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  color: rgb(201, 197, 197);
+}
 .my-name {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .copyright {
-    margin: 30px 0px 5px 0px;
-    min-width: 350px;
+  margin: 30px 0px 5px 0px;
+  min-width: 350px;
 }
 .icone-social {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    transition: opacity 0.3s;
-} 
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.3s;
+}
 .follow-us-contain {
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 200px;
-    color: rgb(201, 197, 197); 
-} 
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  color: rgb(201, 197, 197);
+}
 .follow-us {
-    font-size: 20px;
-    margin: 20px 0px 5px 0px;
-    min-width: 350px;
+  font-size: 20px;
+  margin: 20px 0px 5px 0px;
+  min-width: 350px;
 }
 .find-us-contain {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 200px;
-    color: rgb(201, 197, 197);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  color: rgb(201, 197, 197);
 }
 .find-us {
-    font-size: 20px;
-    margin: 10px 0px 5px 0px;
-    min-width: 350px;
+  font-size: 20px;
+  margin: 10px 0px 5px 0px;
+  min-width: 350px;
 }
 
 /*------------------------ ABOUT PAGE ----------------------*/
 /*------------------------ MAIN ABOUT ---------------------*/
 .section1-about,
 .section3-about {
-    background-image: url(Images/main-about.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; 
-    display: flex;
-    height: 1500px;
-    min-width: 375px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: url(Images/main-about.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  height: 1500px;
+  min-width: 375px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .section1-about-left-contain,
 .section3-about-right-contain {
-    height: 700px;
-    color: white;
-    background-color: black;
-    text-align: center;
-    border: solid;
-    border-color:  rgb(31, 30, 26);
-    border-width: 1px;
-    object-fit: cover;
-    object-position: center;
+  height: 700px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  border: solid;
+  border-color: rgb(31, 30, 26);
+  border-width: 1px;
+  object-fit: cover;
+  object-position: center;
 }
 .setion1-about-shape-image {
-    width: 80px;
-    margin-left: 20px;
+  width: 80px;
+  margin-left: 20px;
 }
 .our-chef,
 .our-story {
-    color: white;
-    font-size: 30px;
-    margin-bottom: 30px;
-    font-family: "Playfair Display SC", serif;
-    font-weight: 400;
-    margin-top: 100px;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  margin-top: 100px;
 }
 .chef-name {
-    color: rgb(228, 197, 144);
-    font-size: 20px;
+  color: rgb(228, 197, 144);
+  font-size: 20px;
 }
-.every-flavor{
-    font-family:"Fira Code", monospace;
-    font-weight: 100;
-    color: rgb(221, 175, 94);
-    margin-top: 20px;
-    margin-bottom: 30px;
+.every-flavor {
+  font-family: "Fira Code", monospace;
+  font-weight: 100;
+  color: rgb(221, 175, 94);
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .section1-about-left-contain-lorem,
 .section3-about-right-contain-lorem {
-    font-family:"Neucha", cursive;
-    font-size: 25px;
-    margin: 40px 40px;
+  font-family: "Neucha", cursive;
+  font-size: 25px;
+  margin: 40px 40px;
 }
 .section1-about-right-contain {
-    width: 350px;
-    height: 600px;
-    border: solid;
-    border-color:  rgb(31, 30, 26);
-    border-width: 1px;
-    object-fit: cover;
-    object-position: center;
-    align-items: center;
+  width: 350px;
+  height: 600px;
+  border: solid;
+  border-color: rgb(31, 30, 26);
+  border-width: 1px;
+  object-fit: cover;
+  object-position: center;
+  align-items: center;
 }
 .chef-image-section1-about,
 .staf-image-section1-about {
-    width: 350px;
-    height: 600px;
-    object-position: center;
-    object-fit: cover;
+  width: 350px;
+  height: 600px;
+  object-position: center;
+  object-fit: cover;
 }
 .section2-about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(34, 33, 33);
-    border-bottom: solid;
-    border-bottom-color: rgb(57, 53, 3);
-    height: 1650px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(34, 33, 33);
+  border-bottom: solid;
+  border-bottom-color: rgb(57, 53, 3);
+  height: 1650px;
 }
 .section2-about-our-location {
-    color: white;
-    font-family: "Playfair Display SC", serif;
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+  color: white;
+  font-family: "Playfair Display SC", serif;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 .section2-about-lorem {
-    color: rgb(228, 197, 144);
-    font-family: "Neucha", cursive;
-    margin-bottom: 10px;
-    font-size: 20px;
+  color: rgb(228, 197, 144);
+  font-family: "Neucha", cursive;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 .section2-location-contain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 100px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 100px;
 }
 .image-location {
-    width: 300px;
-    height: 300px;
-    object-position: center;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: box-shadow 0.15s;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 50px;
+  width: 300px;
+  height: 300px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: box-shadow 0.15s;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
 }
 
 /*------------------------ MENU PAGE --------------------------*/
@@ -526,54 +532,53 @@ footer {
 .menu-signature-section,
 .menu-cocktail-section,
 .menu-dessert-section {
-    background-image: url(Images/main-menu.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-
+  background-image: url(Images/main-menu.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 }
 .menu-signature-section {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 .menu-signature-section-tittle,
 .menu-cocktail-section-tittle,
 .menu-dessert-section-tittle {
-    color: white;
-    font-size: 15px;
-    margin-bottom: 30px;
-    font-family:"Fira Code", monospace;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 30px;
+  font-family: "Fira Code", monospace;
 }
 .miniuature-menu {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
 }
 .signature {
-    margin-top: 20PX;
+  margin-top: 20px;
 }
 .signature,
 .cocktail {
-    color:rgb(247, 247, 247);
-    font-size: 20px;
-    font-weight: 100;
-    margin-bottom: 10px;
-    font-family: "Neucha", cursive;
+  color: rgb(247, 247, 247);
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-family: "Neucha", cursive;
 }
 .menu-signature-section-contain,
 .menu-cocktail-section-contain,
 .menu-dessert-section-contain {
-    display: flex;
-    flex-direction: row;
-    flex-direction: column;
-    width: 100%;
-    min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
+  min-height: 400px;
 }
 .menu-left-signature,
 .menu-left-cocktail,
@@ -581,150 +586,150 @@ footer {
 .menu-right-signature,
 .menu-right-cocktail,
 .menu-right-dessert {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
 }
 .menu-contain {
-    width: 100%;
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: none;  
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 .menu {
-    text-align: start;
-    margin-left: 20px;
-    color: white;
+  text-align: start;
+  margin-left: 20px;
+  color: white;
 }
 .menu-ingredients {
-    padding-top: 10px;
-    font-family: "Neucha", cursive;
-    color: rgb(154, 150, 150);
-    width: 200px;
-    font-size: 15px;
+  padding-top: 10px;
+  font-family: "Neucha", cursive;
+  color: rgb(154, 150, 150);
+  width: 200px;
+  font-size: 15px;
 }
 .menu-name,
 .menu-price {
-    font-size: 15px;
+  font-size: 15px;
 }
 .puntini {
-    display: none;
+  display: none;
 }
 
 /*-------------------- CONTACT PAGE --------------------------*/
 /*------------------- MAIN ONTACT PAGE ----------------------*/
 .section1-contact {
-    background-image: url(Images/main4.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: url(Images/main4.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contact-gauche-contain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-    margin-top: 0px;
-    margin-left: 80px;
-    margin-right: 80px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  margin-top: 0px;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-items: center;
 }
 .lets-get-in-touch {
-    font-size: 18px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    color: rgb(228, 197, 144);
-    font-family: "Neucha", cursive;
-    text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  color: rgb(228, 197, 144);
+  font-family: "Neucha", cursive;
+  text-align: center;
 }
 .imput-name,
 .imput-email,
 .imput-subject {
-    height: 35px;
-    margin-bottom: 15px;
-    font-size: 15px;
-    padding-left: 10px;
-    outline: none;
-    border-radius: 5px;
-    min-width: 280px;
+  height: 35px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 5px;
+  min-width: 280px;
 }
 .text-area {
-    min-width: 280px;
-    resize: vertical;
-    font-size: 15px;
-    padding-left: 10px;
-    outline: none;
-    border-radius: 5px;
+  min-width: 280px;
+  resize: vertical;
+  font-size: 15px;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 5px;
 }
 .send-messaage-button {
-    width: 100px;
-    margin-top: 10px;
-    height: 40px;
-    cursor: pointer;
-    color: black;
-    border-radius: 5px;
-    background-color: rgb(228, 197, 144);
-    transition: background-color 500ms linear;
+  width: 100px;
+  margin-top: 10px;
+  height: 40px;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  background-color: rgb(228, 197, 144);
+  transition: background-color 500ms linear;
 }
 .send-messaage-button:hover {
-    background-color: black;
-    color: rgb(228, 197, 144);
+  background-color: black;
+  color: rgb(228, 197, 144);
 }
 .contact-droite-contain {
-    margin-top: 100px;
-    background-color: black;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 375px;
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 375px;
 }
 .contact {
-    font-size: 40px;
-    margin-bottom: 50px;
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 .icone-localisation-contain,
 .icone-phone-contain,
 .icone-message-contain,
 .icone-restaurant-contain {
-    display: flex;
-    margin-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .icone-marqueur,
 .icone-phone,
 .icone-message,
 .icone-restaurant {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .iframe-contain {
-    display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 iframe {
-    height: 250px;
+  height: 250px;
 }
 .map-contain {
-    background-image: url(Images/main4.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    justify-content: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-} 
+  background-image: url(Images/main4.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}

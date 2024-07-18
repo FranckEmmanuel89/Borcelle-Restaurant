@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="Images/favicone2.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
@@ -33,9 +34,14 @@
         </nav>
     </header>
     <!------------------------ MAIN --------------------------->
-    <main>
+    <main id="swup" class="transition-fade">
         <!---------- SECTION1 ------------>
-        <section class="section1-about">
+        <section 
+        data-aos="fade-in"
+        data-aos-delay=""
+        data-aos-easing="linear"
+        data-aos-duration="700"
+        class="section1-about">
             <div class="section1-about-left-contain">
                 <h2 class="our-chef"> 
                     Our Chef
@@ -60,7 +66,12 @@
         </section>
         <!---------- SECTION2 ------------>
         <section class="section2-about">
-            <div class="section2-about-our-laction">
+            <div 
+            data-aos="fade-in"
+            data-aos-delay=""
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            class="section2-about-our-laction">
                 <h3 class="section2-about-our-location">
                     Our location
                 </h3>
@@ -68,7 +79,12 @@
                     Lorem Ipsum is simply dummy printing and typesetting
                 </p>
             </div>
-            <div class="section2-location-contain">
+            <div 
+            data-aos="fade-in"
+            data-aos-delay=""
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            class="section2-location-contain">
                 <div>
                     <img class="image-location" src="Images/lacation.jpg" alt="image du lieux 1">
                 </div>                   
@@ -85,11 +101,26 @@
         </section>
         <!---------- SECTION3 ------------>
         <section class="section3-about">
-            <img class="setion3-about-shape-image" src="Images/shape-8.png" alt="fruits">
-            <div class="section3-about-left-contain">
+            <img 
+            data-aos="fade-in"
+            data-aos-delay=""
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            class="setion3-about-shape-image" src="Images/shape-8.png" alt="fruits">
+            <div 
+            data-aos="fade-in"
+            data-aos-delay=""
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            class="section3-about-left-contain">
                 <img class="staf-image-section1-about" src="Images/staff.png" alt="staff">
             </div>
-            <div class="section3-about-right-contain">
+            <div 
+            data-aos="fade-in"
+            data-aos-delay=""
+            data-aos-easing="linear"
+            data-aos-duration="700"
+            class="section3-about-right-contain">
                 <h3 class="our-story"> 
                     Our Story
                 </h3>
@@ -104,11 +135,21 @@
 
     <!------------------------ FOOTER --------------------------->
     <footer>
-        <div class="copyright-contain">
+        <div 
+        data-aos="fade-in"
+        data-aos-delay=""
+        data-aos-easing="linear"
+        data-aos-duration="700"
+        class="copyright-contain">
             <p class="copyright">Copyright @2024</p>
             <p>Designed by <span class="my-name">Franck Emmanuel D</span></p>
         </div>  
-        <div class="follow-us-contain">
+        <div 
+        data-aos="fade-in"
+        data-aos-delay=""
+        data-aos-easing="linear"
+        data-aos-duration="700"
+        class="follow-us-contain">
             <div class="follow-us">
                 <p>FOLLOW US</p>
             </div>
@@ -120,11 +161,20 @@
                 <img class="icone-social" src="Images/icons8-télégramme-app-48.png" alt="icone de telegramme">
             </div>
         </div>
-        <div class="find-us-contain">
+        <div 
+        data-aos="fade-in"
+        data-aos-delay=""
+        data-aos-easing="linear"
+        data-aos-duration="700"
+        class="find-us-contain">
             <p class="find-us">Find Us</p>
             <p>475 Main Street, NY</p>
             <P>+00 151525</P>
         </div>
-    </footer>   
+    </footer> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
