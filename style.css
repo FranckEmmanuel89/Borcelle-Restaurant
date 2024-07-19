@@ -230,7 +230,7 @@ nav {
 }
 /*------------------- MAIN SECTION3 INDEX/HOME -------------------*/
 .section3 {
-  background-image: url(images/Screenshot\ 2024-07-19\ 155054.png);
+  position: relative;
   height: 400px;
   background-position: center;
   background-size: cover;
@@ -239,6 +239,10 @@ nav {
   justify-content: center;
   text-align: center;
   overflow: hidden;
+}
+
+.clients-image {
+  position: absolute;
 }
 .what-do-they-say-about-us {
   color: rgb(228, 197, 144);
